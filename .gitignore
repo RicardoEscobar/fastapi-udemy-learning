@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/venv,linux,macos,python,windows,database,virtualenv,images
-# Edit at https://www.toptal.com/developers/gitignore?templates=venv,linux,macos,python,windows,database,virtualenv,images
+# Created by https://www.toptal.com/developers/gitignore/api/venv,linux,macos,images,python,windows,database,virtualenv,dotenv
+# Edit at https://www.toptal.com/developers/gitignore?templates=venv,linux,macos,images,python,windows,database,virtualenv,dotenv
 
 ### Database ###
 *.accdb
@@ -10,6 +10,9 @@
 *.sqlite3
 *.db-shm
 *.db-wal
+
+### dotenv ###
+.env
 
 ### Images ###
 # JPEG
@@ -247,7 +250,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/
@@ -338,4 +340,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/venv,linux,macos,python,windows,database,virtualenv,images
+# End of https://www.toptal.com/developers/gitignore/api/venv,linux,macos,images,python,windows,database,virtualenv,dotenv
