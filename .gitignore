@@ -1,5 +1,15 @@
-# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux,python,virtualenv,venv
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,linux,python,virtualenv,venv
+# Created by https://www.toptal.com/developers/gitignore/api/venv,linux,macos,python,windows,virtualenv,database
+# Edit at https://www.toptal.com/developers/gitignore?templates=venv,linux,macos,python,windows,virtualenv,database
+
+### Database ###
+*.accdb
+*.db
+*.dbf
+*.mdb
+*.pdb
+*.sqlite3
+*.db-shm
+*.db-wal
 
 ### Linux ###
 *~
@@ -263,4 +273,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,python,virtualenv,venv
+# End of https://www.toptal.com/developers/gitignore/api/venv,linux,macos,python,windows,virtualenv,database
