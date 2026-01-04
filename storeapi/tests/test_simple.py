@@ -3,6 +3,7 @@ def test_one_two():
     y = 2
     assert x + y == 3
 
+
 def test_diff_contains():
     x = {'a': 1, 'b': 2}
     expected = {'a': 1}
