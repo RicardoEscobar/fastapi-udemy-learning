@@ -9,7 +9,7 @@ comment_table = {}
 def find_post(post_id: int):
     return post_table.get(post_id)
 
-@router.post("/post", response_model=UserPost)
+@router.post("/post", response_model=UserPost, status_code=201)
 async def create_post(post_in: UserPostIn):
     data = post_in.model_dump()
     last_record_id = len(post_table)
