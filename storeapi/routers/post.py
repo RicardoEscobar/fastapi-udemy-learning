@@ -31,7 +31,10 @@ async def create_comment(comment: CommentIn):
     last_record_id = len(comment_table)
     new_comment = {**data, "id": last_record_id}
     comment_table[last_record_id] = new_comment
-    return new_comment@router.get("/post/{post_id}", response_model=UserPostWithComments)
+    return new_comment
+
+
+@router.get("/post/{post_id}", response_model=UserPostWithComments)
 async def get_post_with_comments(post_id: int):
     post = find_post(post_id)
     if not post:
