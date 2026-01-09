@@ -1,3 +1,4 @@
+import os
 from typing import AsyncGenerator, Generator
 
 import pytest
@@ -5,8 +6,11 @@ import pytest_asyncio
 from fastapi.testclient import TestClient
 from httpx import ASGITransport, AsyncClient
 
-from storeapi.main import app
 from storeapi.routers.post import comment_table, post_table
+
+os.environ["ENV_STATE"] = "test"
+
+from storeapi.main import app # noqa: E402
 
 
 @pytest.fixture()
