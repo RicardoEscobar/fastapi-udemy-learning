@@ -13,12 +13,19 @@ class GlobalConfig(BaseConfig):
 
 
 class DevConfig(GlobalConfig):
-    pass
+    class Config:
+        env_file = "DEV_"
 
 
 class ProdConfig(GlobalConfig):
-    pass
+    class Config:
+        env_file = "PROD_"
 
 
 class TestConfig(GlobalConfig):
-    pass
+    DATABASE_URL = "sqlite:///test.db"
+    DB_FORCE_ROLL_BACK = True
+    
+    class Config:
+        env_file = "TEST_"
+    
